@@ -11,7 +11,8 @@ import {
     translateGif, 
     translateSticker,
     randomGif, 
-    randomSticker
+    randomSticker,
+    randomId
 } from "https://deno.land/x/deno_giphy_api/mod.ts";
 
 or
@@ -24,7 +25,8 @@ import {
     translateGif, 
     translateSticker,
     randomGif, 
-    randomSticker
+    randomSticker,
+    randomId
 } from "https://denopkg.com/yeukfei02/deno-giphy-api/mod.ts";
 ```
 
@@ -174,4 +176,15 @@ const params = {
 };
 
 const sticker = await randomSticker(params);
+```
+
+## randomId
+
+```ts
+// key is mandatory
+const params = {
+    key: "apiKey",
+};
+
+const randomId = await randomId(params);
 ```
