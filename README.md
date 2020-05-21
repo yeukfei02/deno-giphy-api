@@ -1,16 +1,18 @@
 # deno-giphy-api
 
+https://deno.land/x/deno_giphy_api
+
 giphy api in deno
 
 ```ts
-import { 
-    searchGif, 
+import {
+    searchGif,
     searchSticker,
-    searchTrendingGif, 
+    searchTrendingGif,
     searchTrendingSticker,
-    translateGif, 
+    translateGif,
     translateSticker,
-    randomGif, 
+    randomGif,
     randomSticker,
     randomId,
     getGifById,
@@ -23,14 +25,14 @@ import {
 
 or
 
-import { 
-    searchGif, 
+import {
+    searchGif,
     searchSticker,
-    searchTrendingGif, 
+    searchTrendingGif,
     searchTrendingSticker,
-    translateGif, 
+    translateGif,
     translateSticker,
-    randomGif, 
+    randomGif,
     randomSticker,
     randomId,
     getGifById,
