@@ -16,3 +16,5 @@ export { getGifById } from "./src/getGifById.ts";
 export { getGifsById } from "./src/getGifsById.ts";
 
 export { getCategories } from "./src/categories.ts";
+
+export { getAutocomplete } from "./src/autocomplete.ts";
