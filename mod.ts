@@ -18,3 +18,5 @@ export { getGifsById } from "./src/getGifsById.ts";
 export { getCategories } from "./src/categories.ts";
 
 export { getAutocomplete } from "./src/autocomplete.ts";
+
+export { getSearchSuggestions } from "./src/searchSuggestions.ts";

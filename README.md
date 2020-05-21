@@ -16,7 +16,8 @@ import {
     getGifById,
     getGifsById,
     getCategories,
-    getAutocomplete
+    getAutocomplete,
+    getSearchSuggestions
 } from "https://deno.land/x/deno_giphy_api/mod.ts";
 
 or
@@ -34,7 +35,8 @@ import {
     getGifById,
     getGifsById,
     getCategories,
-    getAutocomplete
+    getAutocomplete,
+    getSearchSuggestions
 } from "https://denopkg.com/yeukfei02/deno-giphy-api/mod.ts";
 ```
 
@@ -245,4 +247,16 @@ const params = {
 };
 
 const searchTags = await getAutocomplete(params);
+```
+
+## getSearchSuggestions
+
+```ts
+// key is mandatory
+const params = {
+    api_key: "l3zCs4VG53GTOVfp3KNBNUaqV1B59Gaw",
+};
+const term = "dog";
+
+const searchSuggestions = await getSearchSuggestions(term, params);
 ```
