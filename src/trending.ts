@@ -1,28 +1,10 @@
-export async function searchTrendingGif(
-  apiKey: string,
-  limit?: number,
-  offset?: number,
-) {
+export async function searchTrendingGif(params: any) {
   let result = null;
 
-  let params = {
-    key: apiKey,
-    limit: "25",
-    offset: "0",
-  };
-  if (limit) {
-    let obj = {
-      limit: limit,
-    };
-    params = Object.assign(params, obj);
+  let queryString = "";
+  if (params) {
+    queryString = new URLSearchParams(params).toString();
   }
-  if (offset) {
-    let obj = {
-      offer: offset,
-    };
-    params = Object.assign(params, obj);
-  }
-  const queryString = new URLSearchParams(params).toString();
 
   const response = await fetch(
     `https://api.giphy.com/v1/gifs/trending?${queryString}`,
@@ -34,31 +16,13 @@ export async function searchTrendingGif(
   return result;
 }
 
-export async function searchTrendingSticker(
-  apiKey: string,
-  limit?: number,
-  offset?: number,
-) {
+export async function searchTrendingSticker(params: any) {
   let result = null;
 
-  let params = {
-    key: apiKey,
-    limit: "25",
-    offset: "0",
-  };
-  if (limit) {
-    let obj = {
-      limit: limit,
-    };
-    params = Object.assign(params, obj);
+  let queryString = "";
+  if (params) {
+    queryString = new URLSearchParams(params).toString();
   }
-  if (offset) {
-    let obj = {
-      offer: offset,
-    };
-    params = Object.assign(params, obj);
-  }
-  const queryString = new URLSearchParams(params).toString();
 
   const response = await fetch(
     `https://api.giphy.com/v1/stickers/trending?${queryString}`,
