@@ -20,3 +20,5 @@ export { getCategories } from "./src/categories.ts";
 export { getAutocomplete } from "./src/autocomplete.ts";
 
 export { getSearchSuggestions } from "./src/searchSuggestions.ts";
+
+export { getTrendingSearchTerm } from "./src/trendingSearchTerm.ts";

@@ -17,7 +17,8 @@ import {
     getGifsById,
     getCategories,
     getAutocomplete,
-    getSearchSuggestions
+    getSearchSuggestions,
+    getTrendingSearchTerm
 } from "https://deno.land/x/deno_giphy_api/mod.ts";
 
 or
@@ -36,7 +37,8 @@ import {
     getGifsById,
     getCategories,
     getAutocomplete,
-    getSearchSuggestions
+    getSearchSuggestions,
+    getTrendingSearchTerm
 } from "https://denopkg.com/yeukfei02/deno-giphy-api/mod.ts";
 ```
 
@@ -193,7 +195,7 @@ const sticker = await randomSticker(params);
 ```ts
 // key is mandatory
 const params = {
-    api_key: "l3zCs4VG53GTOVfp3KNBNUaqV1B59Gaw",
+    api_key: "apiKey",
 };
 
 const randomId = await randomId(params);
@@ -204,7 +206,7 @@ const randomId = await randomId(params);
 ```ts
 // key is mandatory
 const params = {
-    api_key: "l3zCs4VG53GTOVfp3KNBNUaqV1B59Gaw",
+    api_key: "apiKey",
 };
 
 const id = "gifId";
@@ -216,7 +218,7 @@ const gif = await getGifById(id, params);
 ```ts
 // key is mandatory
 const params = {
-    api_key: "l3zCs4VG53GTOVfp3KNBNUaqV1B59Gaw",
+    api_key: "apiKey",
 };
 
 const idsList = [
@@ -231,7 +233,7 @@ const gifs = await getGifsById(idsList, params);
 ```ts
 // key is mandatory
 const params = {
-    api_key: "l3zCs4VG53GTOVfp3KNBNUaqV1B59Gaw",
+    api_key: "apiKey",
 };
 
 const gifs = await getCategories(params);
@@ -242,7 +244,7 @@ const gifs = await getCategories(params);
 ```ts
 // key and q are mandatory
 const params = {
-    api_key: "l3zCs4VG53GTOVfp3KNBNUaqV1B59Gaw",
+    api_key: "apiKey",
     q: "dog"
 };
 
@@ -254,9 +256,20 @@ const searchTags = await getAutocomplete(params);
 ```ts
 // key is mandatory
 const params = {
-    api_key: "l3zCs4VG53GTOVfp3KNBNUaqV1B59Gaw",
+    api_key: "apiKey",
 };
 const term = "dog";
 
 const searchSuggestions = await getSearchSuggestions(term, params);
+```
+
+## getTrendingSearchTerm
+
+```ts
+// key is mandatory
+const params = {
+    api_key: "apiKey",
+};
+
+const trendingSearchTerm = await getTrendingSearchTerm(params);
 ```
