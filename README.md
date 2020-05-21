@@ -13,7 +13,9 @@ import {
     randomGif, 
     randomSticker,
     randomId,
-    getGifById
+    getGifById,
+    getGifsById,
+    getCategories
 } from "https://deno.land/x/deno_giphy_api/mod.ts";
 
 or
@@ -28,7 +30,9 @@ import {
     randomGif, 
     randomSticker,
     randomId,
-    getGifById
+    getGifById,
+    getGifsById,
+    getCategories
 } from "https://denopkg.com/yeukfei02/deno-giphy-api/mod.ts";
 ```
 
@@ -185,7 +189,7 @@ const sticker = await randomSticker(params);
 ```ts
 // key is mandatory
 const params = {
-    key: "apiKey",
+    api_key: "l3zCs4VG53GTOVfp3KNBNUaqV1B59Gaw",
 };
 
 const randomId = await randomId(params);
@@ -196,9 +200,35 @@ const randomId = await randomId(params);
 ```ts
 // key is mandatory
 const params = {
-    key: "apiKey",
+    api_key: "l3zCs4VG53GTOVfp3KNBNUaqV1B59Gaw",
 };
 
 const id = "gifId";
 const gif = await getGifById(id, params);
+```
+
+## getGifsById
+
+```ts
+// key is mandatory
+const params = {
+    api_key: "l3zCs4VG53GTOVfp3KNBNUaqV1B59Gaw",
+};
+
+const idsList = [
+    "xT4uQulxzV39haRFjG",
+    "3og0IPxMM0erATueVW",
+];
+const gifs = await getGifsById(idsList, params);
+```
+
+## getCategories
+
+```ts
+// key is mandatory
+const params = {
+    api_key: "l3zCs4VG53GTOVfp3KNBNUaqV1B59Gaw",
+};
+
+const gifs = await getCategories(params);
 ```

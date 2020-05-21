@@ -14,3 +14,5 @@ export { randomId } from "./src/randomId.ts";
 export { getGifById } from "./src/getGifById.ts";
 
 export { getGifsById } from "./src/getGifsById.ts";
+
+export { getCategories } from "./src/categories.ts";

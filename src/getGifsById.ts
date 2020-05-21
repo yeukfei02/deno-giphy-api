@@ -16,7 +16,7 @@ export async function getGifsById(ids: string[], params: any) {
   if (params) {
     queryString = new URLSearchParams(params).toString();
   }
-  
+
   const response = await fetch(
     `https://api.giphy.com/v1/gifs?${queryString}`,
   );
