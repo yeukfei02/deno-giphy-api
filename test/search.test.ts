@@ -3,7 +3,7 @@ import { assert } from "../deps.ts";
 
 Deno.test("searchGif", async () => {
   const params = {
-    key: "l3zCs4VG53GTOVfp3KNBNUaqV1B59Gaw",
+    api_key: "l3zCs4VG53GTOVfp3KNBNUaqV1B59Gaw",
     q: "dog",
   };
   const result = await searchGif(params);
@@ -12,7 +12,7 @@ Deno.test("searchGif", async () => {
 
 Deno.test("searchGifWithLimitAndOffset", async () => {
   const params = {
-    key: "l3zCs4VG53GTOVfp3KNBNUaqV1B59Gaw",
+    api_key: "l3zCs4VG53GTOVfp3KNBNUaqV1B59Gaw",
     q: "dog",
     limit: 3,
     offset: 5,
@@ -23,7 +23,7 @@ Deno.test("searchGifWithLimitAndOffset", async () => {
 
 Deno.test("searchSticker", async () => {
   const params = {
-    key: "l3zCs4VG53GTOVfp3KNBNUaqV1B59Gaw",
+    api_key: "l3zCs4VG53GTOVfp3KNBNUaqV1B59Gaw",
     q: "dog",
   };
   const result = await searchSticker(params);
@@ -32,7 +32,7 @@ Deno.test("searchSticker", async () => {
 
 Deno.test("searchStickerWithLimitAndOffset", async () => {
   const params = {
-    key: "l3zCs4VG53GTOVfp3KNBNUaqV1B59Gaw",
+    api_key: "l3zCs4VG53GTOVfp3KNBNUaqV1B59Gaw",
     q: "dog",
     limit: 3,
     offset: 5,

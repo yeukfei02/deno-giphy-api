@@ -3,7 +3,7 @@ import { assert } from "../deps.ts";
 
 Deno.test("searchTrendingGif", async () => {
   const params = {
-    key: "l3zCs4VG53GTOVfp3KNBNUaqV1B59Gaw",
+    api_key: "l3zCs4VG53GTOVfp3KNBNUaqV1B59Gaw",
   };
   const result = await searchTrendingGif(params);
   assert(result);
@@ -11,7 +11,7 @@ Deno.test("searchTrendingGif", async () => {
 
 Deno.test("searchTrendingGifWithLimitAndOffset", async () => {
   const params = {
-    key: "l3zCs4VG53GTOVfp3KNBNUaqV1B59Gaw",
+    api_key: "l3zCs4VG53GTOVfp3KNBNUaqV1B59Gaw",
     limit: 3,
     offset: 5,
   };
@@ -21,7 +21,7 @@ Deno.test("searchTrendingGifWithLimitAndOffset", async () => {
 
 Deno.test("searchTrendingSticker", async () => {
   const params = {
-    key: "l3zCs4VG53GTOVfp3KNBNUaqV1B59Gaw",
+    api_key: "l3zCs4VG53GTOVfp3KNBNUaqV1B59Gaw",
   };
   const result = await searchTrendingSticker(params);
   assert(result);
@@ -29,7 +29,7 @@ Deno.test("searchTrendingSticker", async () => {
 
 Deno.test("searchTrendingStickerWithLimitAndOffset", async () => {
   const params = {
-    key: "l3zCs4VG53GTOVfp3KNBNUaqV1B59Gaw",
+    api_key: "l3zCs4VG53GTOVfp3KNBNUaqV1B59Gaw",
     limit: 3,
     offset: 5,
   };
