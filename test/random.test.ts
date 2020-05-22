@@ -3,7 +3,7 @@ import { assert } from "../deps.ts";
 
 Deno.test("randomGif", async () => {
   const params = {
-    key: "l3zCs4VG53GTOVfp3KNBNUaqV1B59Gaw",
+    api_key: "l3zCs4VG53GTOVfp3KNBNUaqV1B59Gaw",
   };
   const result = await randomGif(params);
   assert(result);
@@ -11,7 +11,7 @@ Deno.test("randomGif", async () => {
 
 Deno.test("randomGifWithTag", async () => {
   const params = {
-    key: "l3zCs4VG53GTOVfp3KNBNUaqV1B59Gaw",
+    api_key: "l3zCs4VG53GTOVfp3KNBNUaqV1B59Gaw",
     tag: "indian food",
   };
   const result = await randomGif(params);
@@ -20,7 +20,7 @@ Deno.test("randomGifWithTag", async () => {
 
 Deno.test("randomSticker", async () => {
   const params = {
-    key: "l3zCs4VG53GTOVfp3KNBNUaqV1B59Gaw",
+    api_key: "l3zCs4VG53GTOVfp3KNBNUaqV1B59Gaw",
   };
   const result = await randomSticker(params);
   assert(result);
@@ -28,7 +28,7 @@ Deno.test("randomSticker", async () => {
 
 Deno.test("randomStickerWithTag", async () => {
   const params = {
-    key: "l3zCs4VG53GTOVfp3KNBNUaqV1B59Gaw",
+    api_key: "l3zCs4VG53GTOVfp3KNBNUaqV1B59Gaw",
     tag: "indian food",
   };
   const result = await randomSticker(params);

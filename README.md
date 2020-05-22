@@ -49,13 +49,13 @@ import {
 ```ts
 // key and q are mandatory
 const params = {
-    key: "apiKey",
+    api_key: "apiKey",
     q: "dog",
 };
 
 // limit and offset are optional, default limit = 25, offset = 0
 const params = {
-    key: "apiKey",
+    api_key: "apiKey",
     q: "dog",
     limit: 3,
     offset: 5,
@@ -69,13 +69,13 @@ const gif = await searchGif(params);
 ```ts
 // key and q are mandatory
 const params = {
-    key: "apiKey",
+    api_key: "apiKey",
     q: "dog",
 };
 
 // limit and offset are optional, default limit = 25, offset = 0
 const params = {
-    key: "apiKey",
+    api_key: "apiKey",
     q: "dog",
     limit: 3,
     offset: 5,
@@ -89,12 +89,12 @@ const sticker = await searchSticker(params);
 ```ts
 // key is mandatory
 const params = {
-    key: "apiKey",
+    api_key: "apiKey",
 };
 
 // limit and offset are optional, default limit = 25, offset = 0
 const params = {
-    key: "apiKey",
+    api_key: "apiKey",
     limit: 3,
     offset: 5,
 };
@@ -107,12 +107,12 @@ const gif = await searchTrendingGif(params);
 ```ts
 // key is mandatory
 const params = {
-    key: "apiKey",
+    api_key: "apiKey",
 };
 
 // limit and offset are optional, default limit = 25, offset = 0
 const params = {
-    key: "apiKey",
+    api_key: "apiKey",
     limit: 3,
     offset: 5,
 };
@@ -125,13 +125,13 @@ const sticker = await searchTrendingSticker(params);
 ```ts
 // key and s are mandatory
 const params = {
-    key: "apiKey",
+    api_key: "apiKey",
     s: "dog"
 };
 
 // weirdness is optional, 0-10
 const params = {
-    key: "apiKey",
+    api_key: "apiKey",
     s: "dog",
     weirdness: 10,
 };
@@ -144,13 +144,13 @@ const gif = await translateGif(params);
 ```ts
 // key and s are mandatory
 const params = {
-    key: "apiKey",
+    api_key: "apiKey",
     s: "dog"
 };
 
 // weirdness is optional, 0-10
 const params = {
-    key: "apiKey",
+    api_key: "apiKey",
     s: "dog",
     weirdness: 10,
 };
@@ -163,12 +163,12 @@ const sticker = await translateSticker(params);
 ```ts
 // key is mandatory
 const params = {
-    key: "apiKey",
+    api_key: "apiKey",
 };
 
 // tag is optional
 const params = {
-    key: "apiKey",
+    api_key: "apiKey",
     tag: "dog",
 };
 
@@ -180,12 +180,12 @@ const gif = await randomGif(params);
 ```ts
 // key is mandatory
 const params = {
-    key: "apiKey",
+    api_key: "apiKey",
 };
 
 // tag is optional
 const params = {
-    key: "apiKey",
+    api_key: "apiKey",
     tag: "dog",
 };
 

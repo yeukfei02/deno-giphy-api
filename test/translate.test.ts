@@ -3,7 +3,7 @@ import { assert } from "../deps.ts";
 
 Deno.test("translateGif", async () => {
   const params = {
-    key: "l3zCs4VG53GTOVfp3KNBNUaqV1B59Gaw",
+    api_key: "l3zCs4VG53GTOVfp3KNBNUaqV1B59Gaw",
     s: "dog",
   };
   const result = await translateGif(params);
@@ -12,7 +12,7 @@ Deno.test("translateGif", async () => {
 
 Deno.test("translateGifWithWeirdness", async () => {
   const params = {
-    key: "l3zCs4VG53GTOVfp3KNBNUaqV1B59Gaw",
+    api_key: "l3zCs4VG53GTOVfp3KNBNUaqV1B59Gaw",
     s: "dog",
     weirdness: 10,
   };
@@ -22,7 +22,7 @@ Deno.test("translateGifWithWeirdness", async () => {
 
 Deno.test("translateSticker", async () => {
   const params = {
-    key: "l3zCs4VG53GTOVfp3KNBNUaqV1B59Gaw",
+    api_key: "l3zCs4VG53GTOVfp3KNBNUaqV1B59Gaw",
     s: "dog",
   };
   const result = await translateSticker(params);
@@ -31,7 +31,7 @@ Deno.test("translateSticker", async () => {
 
 Deno.test("translateStickerWithWeirdness", async () => {
   const params = {
-    key: "l3zCs4VG53GTOVfp3KNBNUaqV1B59Gaw",
+    api_key: "l3zCs4VG53GTOVfp3KNBNUaqV1B59Gaw",
     s: "dog",
     weirdness: 10,
   };
