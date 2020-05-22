@@ -1,6 +1,6 @@
 # deno-giphy-api
 
-https://deno.land/x/deno_giphy_api
+[![deno doc](https://doc.deno.land/badge.svg)](https://doc.deno.land/https/deno.land/x/deno_giphy_api/mod.ts)
 
 giphy api in deno
 
