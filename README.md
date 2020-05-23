@@ -5,43 +5,11 @@
 giphy api in deno
 
 ```ts
-import {
-    searchGif,
-    searchSticker,
-    searchTrendingGif,
-    searchTrendingSticker,
-    translateGif,
-    translateSticker,
-    randomGif,
-    randomSticker,
-    randomId,
-    getGifById,
-    getGifsById,
-    getCategories,
-    getAutocomplete,
-    getSearchSuggestions,
-    getTrendingSearchTerm
-} from "https://deno.land/x/deno_giphy_api/mod.ts";
+import * as giphy from "https://deno.land/x/deno_giphy_api/mod.ts";
 
 or
 
-import {
-    searchGif,
-    searchSticker,
-    searchTrendingGif,
-    searchTrendingSticker,
-    translateGif,
-    translateSticker,
-    randomGif,
-    randomSticker,
-    randomId,
-    getGifById,
-    getGifsById,
-    getCategories,
-    getAutocomplete,
-    getSearchSuggestions,
-    getTrendingSearchTerm
-} from "https://denopkg.com/yeukfei02/deno-giphy-api/mod.ts";
+import * as giphy from "https://denopkg.com/yeukfei02/deno-giphy-api/mod.ts";
 ```
 
 ## searchGif
@@ -61,7 +29,7 @@ const params = {
     offset: 5,
 };
 
-const gif = await searchGif(params);
+const gif = await giphy.searchGif(params);
 ```
 
 ## searchSticker
@@ -81,7 +49,7 @@ const params = {
     offset: 5,
 };
 
-const sticker = await searchSticker(params);
+const sticker = await giphy.searchSticker(params);
 ```
 
 ## searchTrendingGif
@@ -99,7 +67,7 @@ const params = {
     offset: 5,
 };
 
-const gif = await searchTrendingGif(params);
+const gif = await giphy.searchTrendingGif(params);
 ```
 
 ## searchTrendingSticker
@@ -117,7 +85,7 @@ const params = {
     offset: 5,
 };
 
-const sticker = await searchTrendingSticker(params);
+const sticker = await giphy.searchTrendingSticker(params);
 ```
 
 ## translateGif
@@ -136,7 +104,7 @@ const params = {
     weirdness: 10,
 };
 
-const gif = await translateGif(params);
+const gif = await giphy.translateGif(params);
 ```
 
 ## translateSticker
@@ -155,7 +123,7 @@ const params = {
     weirdness: 10,
 };
 
-const sticker = await translateSticker(params);
+const sticker = await giphy.translateSticker(params);
 ```
 
 ## randomGif
@@ -172,7 +140,7 @@ const params = {
     tag: "dog",
 };
 
-const gif = await randomGif(params);
+const gif = await giphy.randomGif(params);
 ```
 
 ## randomSticker
@@ -189,7 +157,7 @@ const params = {
     tag: "dog",
 };
 
-const sticker = await randomSticker(params);
+const sticker = await giphy.randomSticker(params);
 ```
 
 ## randomId
@@ -200,7 +168,7 @@ const params = {
     api_key: "apiKey",
 };
 
-const randomId = await randomId(params);
+const randomId = await giphy.randomId(params);
 ```
 
 ## getGifById
@@ -212,7 +180,7 @@ const params = {
 };
 
 const id = "gifId";
-const gif = await getGifById(id, params);
+const gif = await giphy.getGifById(id, params);
 ```
 
 ## getGifsById
@@ -227,7 +195,7 @@ const idsList = [
     "xT4uQulxzV39haRFjG",
     "3og0IPxMM0erATueVW",
 ];
-const gifs = await getGifsById(idsList, params);
+const gifs = await giphy.getGifsById(idsList, params);
 ```
 
 ## getCategories
@@ -238,7 +206,7 @@ const params = {
     api_key: "apiKey",
 };
 
-const gifs = await getCategories(params);
+const gifs = await giphy.getCategories(params);
 ```
 
 ## getAutocomplete
@@ -250,7 +218,7 @@ const params = {
     q: "dog"
 };
 
-const searchTags = await getAutocomplete(params);
+const searchTags = await giphy.getAutocomplete(params);
 ```
 
 ## getSearchSuggestions
@@ -262,7 +230,7 @@ const params = {
 };
 const term = "dog";
 
-const searchSuggestions = await getSearchSuggestions(term, params);
+const searchSuggestions = await giphy.getSearchSuggestions(term, params);
 ```
 
 ## getTrendingSearchTerm
@@ -273,5 +241,5 @@ const params = {
     api_key: "apiKey",
 };
 
-const trendingSearchTerm = await getTrendingSearchTerm(params);
+const trendingSearchTerm = await giphy.getTrendingSearchTerm(params);
 ```
