@@ -1,4 +1,4 @@
-import { apiCall } from "./apiCall.ts";
+import { apiCall } from "./common/common.ts";
 
 export async function getGifsById(ids: string[], params: any) {
   let result = null;
@@ -14,5 +14,5 @@ export async function getGifsById(ids: string[], params: any) {
     }
   }
 
-  return apiCall(params, `https://api.giphy.com/v1/gifs?`);
+  return await apiCall(params, `https://api.giphy.com/v1/gifs?`);
 }
