@@ -6,9 +6,7 @@ export async function apiCall(params: any, url: string) {
     queryString = new URLSearchParams(params).toString();
   }
 
-  const response = await fetch(
-    url + `${queryString}`,
-  );
+  const response = await fetch(`${url}${queryString}`);
   if (response) {
     result = response.json();
   }
