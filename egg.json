@@ -4,7 +4,7 @@
   "entry": "./mod.ts",
   "description": "giphy api in deno",
   "homepage": "https://github.com/yeukfei02/deno-giphy-api",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "files": [
     "*",
     "*/**/*"
