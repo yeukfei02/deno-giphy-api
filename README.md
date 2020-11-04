@@ -9,7 +9,7 @@ giphy api in deno
 ```ts
 // pick 1 to import
 import * as giphy from "https://deno.land/x/deno_giphy_api/mod.ts";
-import * as giphy from "https://x.nest.land/deno-giphy-api@0.1.7/mod.ts";
+import * as giphy from "https://x.nest.land/deno-giphy-api/mod.ts";
 import * as giphy from "https://denopkg.com/yeukfei02/deno-giphy-api/mod.ts";
 ```
 
