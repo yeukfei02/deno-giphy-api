@@ -2,6 +2,8 @@
 
 [![deno doc](https://doc.deno.land/badge.svg)](https://doc.deno.land/https/deno.land/x/deno_giphy_api/mod.ts)
 
+[![nest badge](https://nest.land/badge.svg)](https://nest.land/package/deno-giphy-api)
+
 giphy api in deno
 
 ```ts
