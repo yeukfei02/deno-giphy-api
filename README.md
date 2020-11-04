@@ -2,11 +2,14 @@
 
 [![deno doc](https://doc.deno.land/badge.svg)](https://doc.deno.land/https/deno.land/x/deno_giphy_api/mod.ts)
 
+[![nest badge](https://nest.land/badge.svg)](https://nest.land/package/deno-giphy-api)
+
 giphy api in deno
 
 ```ts
 // pick 1 to import
 import * as giphy from "https://deno.land/x/deno_giphy_api/mod.ts";
+import * as giphy from "https://x.nest.land/deno-giphy-api@0.1.6/mod.ts";
 import * as giphy from "https://denopkg.com/yeukfei02/deno-giphy-api/mod.ts";
 ```
 
